@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"> <!--Specifies the text direction of the element's content ltr means left to right-->
+  <head>
+    <meta charset="utf-8"> <!--Encoding-->
+    <title>Pricing Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> <!--Used to include Bootstrap-->
+  </head>
+  <body>
+      <!-- d-flex is used to specify flexbox containers, flex-column is used to set a vertical direction-->
+      <!-- flex-md-row (Responsive variation of flex-direction-->
+      <!-- align-items-center to position the elements in the center of the container-->
+      <!-- p-4 (padding) mb-3 (margin bottom) bg-dark (back-ground color) text-white (color of the text)-->
+      <div class="d-flex flex-column flex-md-row align-items-center p-4 mb-3 bg-warning text-white"> <!--Header of the website-->
+        <!-- my-0 (top and bottom margins) mr-md-auto (automatic margins)-->
+        <h5 class="my-0 mr-md-auto">Designed by: Andrés R. Bücheli)</h5>
+        <nav class="my-3 mr-md-3"> <!-- my-3 (margin top and bottom) mr-md-3 (margins md for desktops)-->
+          <a href="#" class="p-2 text-dark">About</a> <!-- p-2 (padding)-->
+          <a href="#" class="p-2 text-dark">Products</a>
+          <a href="#" class="p-2 text-dark">Pricing</a>
+        </nav>
+        <!-- btn btn-outline-warning (For button styling)-->
+        <a href="#" class="btn btn-outline-info">Get Started</a>
+      </div>
+
+      <!-- Title and subtitle -->
+      <div class="p-5 pt-md pb-md-4 mx-auto text-center text-info"> <!-- p-5 (padding) pt-md-4 (margin bottom) mx-auto (for horizontally centering fixed-width block level content)-->
+        <h1 class="display-4">Open up your business to new possibilities</h1>
+        <p class="lead">We create last generation apss, using the best full-stack technology to offer a better experience to our customers. It's very important for that your web platforms work and look great, regardless of the device. Quality is our goal. We are aware about the importance of your databases. We take care about everything related to server-side and everything that happens behind-the-scenes.</P>
+      </div>
+
+      <div class="container"> <!-- Responsive fixed width container -->
+        <div class="card-deck mb-5 text-center"> <!-- Set of equal width and height cards that aren’t attached to one another mb-5 (margin bottom)-->
+
+          <div class="card m-4 shadow-sm"> <!-- card to create a card, m-4 (margin) shadow-sm (to create shadow)-->
+            <div class="card-header bg-info">
+              <h4 class="my-0 text-white">SINGLE PAGE APPS</h4> <!-- margin up and bottom-->
+            </div>
+            <div class="card-body">
+              <h1 class="card-title">$300</h1>
+              <ul class="list-unstyled mt-3 mb-4"> <!-- List without bullet points mt-3 (margin top) mb-4 (margin bottom)-->
+                <li>React</li>
+                <li>Redux</li>
+                <li>Angular</li>
+                <li>React-Redux</li>
+              </ul>
+              <button type="button" class="btn btn-lg btn-block btn-outline-primary">Select</button> <!-- btn btn-lg (large button) btn-block (span the full width of a parent) btn-outline-primary (primary button)-->
+            </div>
+          </div>
+
+          <div class="card mt-2 mb-4 shadow-sm">
+            <div class="card-header bg-warning text-white">
+              <h4 class="my-0">RESPONSIVE WEBSITES</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title">$150</h1>
+              <ul class="list-unstyled mt-3 mb-5">
+                <li>Bootstrap</li>
+                <li>SCSS</li>
+                <li>CSS</li>
+                <li>Applied Accessibility</li>
+              </ul>
+              <button type="button" class="btn btn-lg btn-block btn-outline-warning">Select</button> <!-- btn-outline-warning (warning button)-->
+            </div>
+          </div>
+
+          <div class="card m-4 shadow-sm">
+            <div class="card-header bg-info">
+              <h4 class="my-0 text-white">BACKEND PHP APPS</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title">$300</h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>PHP</li>
+                <li>Python</li>
+                <li>.NET</li>
+                <li>MySQL</li>
+              </ul>
+              <button type="button" class="btn btn-lg btn-block btn-outline-primary">Select</button>
+            </div>
+          </div>
+
+        </div>
+
+        <footer class="my-md-5 pt-md-5 border-top"> <!--border-top adds a border in the top -->
+          <div class="row">
+
+            <div class="col-12 col-md"> <!--creates the necessary distance between the year and the cental columns-->
+              <small class="d-block mb-3 text-muted">&copy; 2020</small>
+            </div>
+            <!-- The other three columns are totally identical-->
+            <div class="col-4 col-md">
+              <h5 class="text-info">Extra Items</h5>
+              <ul class="list-unstyled text-small">
+                <li><a href="#" class="text-muted">Bonus</a></li>
+                <li><a href="#" class="text-muted">Features</a></li>
+                <li><a href="#" class="text-muted">Secret news</a></li>
+              </ul>
+            </div>
+
+            <div class="col-4 col-md">
+              <h5 class="text-info">Extra Items</h5>
+              <ul class="list-unstyled text-small">
+                <li><a href="#" class="text-muted">Bonus</a></li>
+                <li><a href="#" class="text-muted">Features</a></li>
+                <li><a href="#" class="text-muted">Secret news</a></li>
+              </ul>
+            </div>
+
+            <div class="col-4 col-md">
+              <h5 class="text-info">Extra Items</h5>
+              <ul class="list-unstyled text-small">
+                <li><a href="#" class="text-muted">Bonus</a></li>
+                <li><a href="#" class="text-muted">Features</a></li>
+                <li><a href="#" class="text-muted">Secret news</a></li>
+              </ul>
+            </div>
+      </div>
+
+
+    <!-- These are the necessary scripts to include bootstrap in the website-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
+
